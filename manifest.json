@@ -9,6 +9,15 @@
           "32": "images/43ef666623bf1bf60a93fd93735daa2a-32bits-32.png",
           "48": "images/43ef666623bf1bf60a93fd93735daa2a-32bits-48.png",
           "128": "images/43ef666623bf1bf60a93fd93735daa2a-32bits-128.png"
-        }
-      
-  }
+        },
+
+        "content_scripts": [
+          {
+            "js": ["scripts/content.js"],
+            "matches": [
+              "https://developer.chrome.com/docs/extensions/*",
+              "https://developer.chrome.com/docs/webstore/*"
+            ]
+          }
+        ]
+      }
